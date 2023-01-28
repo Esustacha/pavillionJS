@@ -1,4 +1,6 @@
-    $(document).ready(function() {
+test    
+
+$(document).ready(function() {
         $(":input, a").attr("tabindex", "-1");
         
         /******Step 1 *******************/
