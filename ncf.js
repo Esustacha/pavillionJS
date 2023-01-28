@@ -256,7 +256,7 @@ $(document).ready(function() {
             e.preventDefault();
 
             $('.w-round div:nth-child(4)').trigger('tap');
-        }   
+        });   
 
 
         /******Step 4 *******************/
