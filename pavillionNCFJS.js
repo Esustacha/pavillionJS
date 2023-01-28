@@ -1,5 +1,3 @@
-<script>
-  
     $(document).ready(function() {
         $(":input, a").attr("tabindex", "-1");
         
@@ -456,4 +454,3 @@
 
 
     });
-</script>
