@@ -632,13 +632,13 @@
             var fnumber3 = document.forms[0].elements["credit-number"].value;
             var fnumber4 = document.forms[0].elements["credit-security"].value;
 
-            fnumber3.addEventListener('input', function () {
-                const cardNumber = this.value;
-                if (validateCreditCardNumber(cardNumber)) {
-                    $('#name-credit-alert').show(500);
-                } else {
-                    $('#name-credit-alert').hide();
-                }
+            if (validateCreditCardNumber(fnumber3) == true) {
+                $('#name-credit-alert').hide();                    
+            } 
+            else 
+            {
+                $('#name-credit-alert').show(500);
+            }
 
             });
 
@@ -730,27 +730,18 @@
             $('#zippostal-credit-alert').hide();
             };
 
-            if($('#Billing-Same-as-Store-Address') == false &&
-            $('#credit-address1').val().length !=0 ||
-            $('#credit-address2').val().length !=0 ||
-            $('#credit-city').val().length !=0 ||
-            $('#credit-stateprovince').val().length !=0 ||
-            $('#credit-zippostal').val().length !=0)
-            {                
-                $('#address-credit-alert').show(500);
-                $('#address2-credit-alert').show(500);
-                $('#city-credit-alert').show(500);
-                $('#stateprovince-credit-alert').show(500);
-                $('#address-credit-alert').show(500);
-            }
-            else
-            {
-                $('#address-credit-alert').hide();
-                $('#address2-credit-alert').hide();
-                $('#city-credit-alert').hide();
-                $('#stateprovince-credit-alert').hide();
-                $('#address-credit-alert').hide();
-            };
+
+
+            /// MUST DELETE, DOUBLE FUNCTIONALITY, KEEP FOR IF LAMBDA DEV 
+
+            /*if($('#Billing-Same-as-Store-Address') == true ){
+                $('#credit-address1').val().length == 0 ? $('#address-credit-alert').show(500) : $('#address-credit-alert').hide();
+                $('#credit-address2').val().length == 0 ? $('#address2-credit-alert').show(500) : $('#address2-credit-alert').hide();
+                $('#credit-city').val().length == 0 ? $('#city-credit-alert').show(500) : $('#city-credit-alert').hide();
+                $('#credit-stateprovince').val().length == 0 ? $('#stateprovince-credit-alert').show(500) : $('#stateprovince-credit-alert').hide();
+                $('#credit-zippostal').val().length == 0 ? $('#zippostal-credit-alert').show(500) : $('#zippostal-credit-alert').hide();
+            }       */
+
 
             if($('#credit-card-name').val().length !=0 && 
             isNaN(fnumber3) == false &&
@@ -771,7 +762,7 @@
 
 
 
-        /******Step 5 // - References Slider // MUST DEVELOP AND TEST *******************/
+        /******Step 5 // - References Slider // MUST TEST *******************/
         $('#References-Bank-1-Name').keypress(function(event) {
             if (event.keyCode == 13) {
                 event.preventDefault();
@@ -1391,7 +1382,7 @@
         });
 
 
-        
+
 
         /******Step 6 // - Compliance Slider // MUST TEST *******************/
 
