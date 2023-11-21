@@ -66,14 +66,14 @@
             if($('#personal-name').val().length !=0 && 
                 $('#personal-email').val().length !=0 && 
                 $('#personal-phone').val().length !=0 && 
-                isNaN(fnumber) == false &&
-                index1 != 0)
+                isNaN(fnumber) == false/* &&
+                index1 != 0*/)
                 {
-                /*$('#name-personal-alert').hide();
+                $('#name-personal-alert').hide();
                 $('#email-personal-alert').hide();
                 $('#phone-personal-alert').hide();
                 $('#phone-personal-alert2').hide();
-                $('#tradeshow-personal-alert').hide();*/
+                $('#tradeshow-personal-alert').hide();
                 console.log("conditions met")
                 $('.w-round div:nth-child(2)').trigger('tap');
                 }
