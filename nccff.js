@@ -36,34 +36,34 @@ $(document).ready(function(){
         console.log(fnumber)
 
         if(document.getElementById('personal-name').value().length == 0){
-            document.getElementById('name-personal-alert').show(500);
+            document.getElementById('name-personal-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('name-personal-alert').hide();
+            document.getElementById('name-personal-alert').style.display = 'none';
         };
         if(document.getElementById('personal-email').value().length == 0){
-            document.getElementById('email-personal-alert').show(500);
+            document.getElementById('email-personal-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('email-personal-alert').hide();
+        document.getElementById('email-personal-alert').style.display = 'none';
         };
         if(document.getElementById('personal-phone').value().length == 0){
-            document.getElementById('phone-personal-alert').show(500);
+            document.getElementById('phone-personal-alert').style.display = 'block';
         } 
         else
         {
-            document.getElementById('phone-personal-alert').hide();
+            document.getElementById('phone-personal-alert').style.display = 'none';
         };  
 
         
         if(isNaN(fnumber) == true){
-            document.getElementById('phone-personal-alert2').show(500);
+            document.getElementById('phone-personal-alert2').style.display = 'block';
         }
         else
         {
-            document.getElementById('phone-personal-alert2').hide();
+            document.getElementById('phone-personal-alert2').style.display = 'none';
         };
 
 
@@ -76,11 +76,11 @@ $(document).ready(function(){
             isNaN(fnumber) == false &&
             slider.index != 0)
             {
-            document.getElementById('name-personal-alert').hide();
-            document.getElementById('email-personal-alert').hide();
-            document.getElementById('phone-personal-alert').hide();
-            document.getElementById('phone-personal-alert2').hide();
-            document.getElementById('tradeshow-personal-alert').hide();
+            document.getElementById('name-personal-alert').style.display = 'none';
+            document.getElementById('email-personal-alert').style.display = 'none';
+            document.getElementById('phone-personal-alert').style.display = 'none';
+            document.getElementById('phone-personal-alert2').style.display = 'none';
+            document.getElementById('tradeshow-personal-alert').style.display = 'none';
             console.log("conditions met")
             Webflow.require('slider').next();
             /*document.getElementById('.w-round div:nth-child(2)').trigger('tap');*/
@@ -181,69 +181,69 @@ $(document).ready(function(){
         console.log(fnumber2)
 
         if(document.getElementById('store-name').value().length == 0){
-            document.getElementById('name-store-alert').show(500);
+            document.getElementById('name-store-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('name-store-alert').hide();
+        document.getElementById('name-store-alert').style.display = 'none';
         };
         if(document.getElementById('store-location').value().length == 0){
-            document.getElementById('location-store-alert').show(500);
+            document.getElementById('location-store-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('location-store-alert').hide();
+        document.getElementById('location-store-alert').style.display = 'none';
         };
         if(document.getElementById('store-address').value().length == 0){
-            document.getElementById('address-store-alert').show(500);
+            document.getElementById('address-store-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('address-store-alert').hide();
+        document.getElementById('address-store-alert').style.display = 'none';
         };
         if(document.getElementById('store-city').value().length == 0){
-            document.getElementById('city-store-alert').show(500);
+            document.getElementById('city-store-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('city-store-alert').hide();
+        document.getElementById('city-store-alert').style.display = 'none';
         };
         if(document.getElementById('store-stateprovince').value().length == 0){
-            document.getElementById('stateprovince-store-alert').show(500);
+            document.getElementById('stateprovince-store-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('stateprovince-store-alert').hide();
+        document.getElementById('stateprovince-store-alert').style.display = 'none';
         };
         if(document.getElementById('store-zippostalcode').value().length == 0){
-            document.getElementById('zippostalcode-store-alert').show(500);
+            document.getElementById('zippostalcode-store-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('zippostalcode-store-alert').hide();
+        document.getElementById('zippostalcode-store-alert').style.display = 'none';
         };
         if(document.getElementById('store-email').value().length == 0){
-            document.getElementById('email-store-alert').show(500);
+            document.getElementById('email-store-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('email-store-alert').hide();
+        document.getElementById('email-store-alert').style.display = 'none';
         };
 
         if(document.getElementById('store-phone').value().length == 0){
-            document.getElementById('phone-store-alert').show(500);
+            document.getElementById('phone-store-alert').style.display = 'block';
         } 
         else
         {
-            document.getElementById('phone-store-alert').hide();
+            document.getElementById('phone-store-alert').style.display = 'none';
         };  
 
         if(isNaN(fnumber2) == true){
-            document.getElementById('phone-store-alert2').show(500);
+            document.getElementById('phone-store-alert2').style.display = 'block';
         }
         else
         {
-            document.getElementById('phone-store-alert2').hide();
+            document.getElementById('phone-store-alert2').style.display = 'none';
         };
 
         if(document.getElementById('store-name').value().length !=0 &&
@@ -490,19 +490,19 @@ $(document).ready(function(){
         e.preventDefault();
 
         if(document.getElementById('ctc-owner-name').value().length == 0 || document.getElementById('contact-email-owner').value().length == 0){
-            document.getElementById('ctc-owner-name-alert').show(500);
+            document.getElementById('ctc-owner-name-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('ctc-owner-name-alert').hide();
+            document.getElementById('ctc-owner-name-alert').style.display = 'none';
         };
 
         if(document.getElementById('ctc-accounts-name').value().length == 0 || document.getElementById('contact-accounts-owner').value().length == 0){
-            document.getElementById('ctc-accounts-name-alert').show(500);
+            document.getElementById('ctc-accounts-name-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('ctc-accounts-name-alert').hide();
+            document.getElementById('ctc-accounts-name-alert').style.display = 'none';
         };
 
         document.getElementById('.w-round div:nth-child(4)').trigger('tap');
@@ -649,35 +649,35 @@ $(document).ready(function(){
         var fnumber4 = document.forms[0].elements["credit-security"].valueue;
 
         if (validateCreditCardNumber(fnumber3) == true) {
-            document.getElementById('name-credit-alert').hide();                    
+            document.getElementById('name-credit-alert').style.display = 'none';                    
         } 
         else 
         {
-            document.getElementById('name-credit-alert').show(500);
+            document.getElementById('name-credit-alert').style.display = 'block';
         }    
 
         if(document.getElementById('credit-name').value().length == 0){
-            document.getElementById('name-credit-alert').show(500);
+            document.getElementById('name-credit-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('name-credit-alert').hide();
+            document.getElementById('name-credit-alert').style.display = 'none';
         };
 
         if(isNaN(fnumber3) == true){
-            document.getElementById('number-credit-alert').show(500);
+            document.getElementById('number-credit-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('number-credit-alert').hide();
+            document.getElementById('number-credit-alert').style.display = 'none';
         };
 
         if(isNaN(fnumber4) == true){
-            document.getElementById('security-credit-alert').show(500);
+            document.getElementById('security-credit-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('security-credit-alert').hide();
+            document.getElementById('security-credit-alert').style.display = 'none';
         };
 
         var index2 = document.forms[0].elements["credit-month"].selectedIndex 
@@ -686,82 +686,82 @@ $(document).ready(function(){
 
         if(index2 == 0)
         {
-            document.getElementById('month-credit-alert').show(500);
+            document.getElementById('month-credit-alert').style.display = 'block';
         
         } 
         else
         {
-            document.getElementById('month-credit-alert').hide();
+            document.getElementById('month-credit-alert').style.display = 'none';
         };
 
         if(index3 == 0)
         {
-            document.getElementById('year-credit-alert').show(500);
+            document.getElementById('year-credit-alert').style.display = 'block';
         
         } 
         else
         {
-            document.getElementById('year-credit-alert').hide();
+            document.getElementById('year-credit-alert').style.display = 'none';
         };
 
         if(index4 == 0)
         {
-            document.getElementById('cardtype-credit-alert').show(500);
+            document.getElementById('cardtype-credit-alert').style.display = 'block';
         
         } 
         else
         {
-            document.getElementById('cardtype-credit-alert').hide();
+            document.getElementById('cardtype-credit-alert').style.display = 'none';
         };
 
         if(document.getElementById('credit-address1').value().length == 0){
-            document.getElementById('address1-credit-alert').show(500);
+            document.getElementById('address1-credit-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('address1-credit-alert').hide();
+        document.getElementById('address1-credit-alert').style.display = 'none';
         };
 
         if(document.getElementById('credit-address2').value().length == 0){
-            document.getElementById('address2-credit-alert').show(500);
+            document.getElementById('address2-credit-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('address2-credit-alert').hide();
+        document.getElementById('address2-credit-alert').style.display = 'none';
         };
 
         if(document.getElementById('credit-city').value().length == 0){
-            document.getElementById('city-credit-alert').show(500);
+            document.getElementById('city-credit-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('city-credit-alert').hide();
+        document.getElementById('city-credit-alert').style.display = 'none';
         };
 
         if(document.getElementById('credit-stateprovince').value().length == 0){
-            document.getElementById('stateprovince-credit-alert').show(500);
+            document.getElementById('stateprovince-credit-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('stateprovince-credit-alert').hide();
+        document.getElementById('stateprovince-credit-alert').style.display = 'none';
         };
 
         if(document.getElementById('credit-zippostal').value().length == 0){
-            document.getElementById('zippostal-credit-alert').show(500);
+            document.getElementById('zippostal-credit-alert').style.display = 'block';
         }
         else
         {
-        document.getElementById('zippostal-credit-alert').hide();
+        document.getElementById('zippostal-credit-alert').style.display = 'none';
         };
 
             /// MUST DELETE, DOUBLE FUNCTIONALITY, KEEP FOR IF LAMBDA DEV 
 
             /*if(document.getElementById('Billing-Same-as-Store-Address') == true ){
-                document.getElementById('credit-address1').value().length == 0 ? document.getElementById('address-credit-alert').show(500) : document.getElementById('address-credit-alert').hide();
-                document.getElementById('credit-address2').value().length == 0 ? document.getElementById('address2-credit-alert').show(500) : document.getElementById('address2-credit-alert').hide();
-                document.getElementById('credit-city').value().length == 0 ? document.getElementById('city-credit-alert').show(500) : document.getElementById('city-credit-alert').hide();
-                document.getElementById('credit-stateprovince').value().length == 0 ? document.getElementById('stateprovince-credit-alert').show(500) : document.getElementById('stateprovince-credit-alert').hide();
-                document.getElementById('credit-zippostal').value().length == 0 ? document.getElementById('zippostal-credit-alert').show(500) : document.getElementById('zippostal-credit-alert').hide();
+                document.getElementById('credit-address1').value().length == 0 ? document.getElementById('address-credit-alert').style.display = 'block' : document.getElementById('address-credit-alert').style.display = 'none';
+                document.getElementById('credit-address2').value().length == 0 ? document.getElementById('address2-credit-alert').style.display = 'block' : document.getElementById('address2-credit-alert').style.display = 'none';
+                document.getElementById('credit-city').value().length == 0 ? document.getElementById('city-credit-alert').style.display = 'block' : document.getElementById('city-credit-alert').style.display = 'none';
+                document.getElementById('credit-stateprovince').value().length == 0 ? document.getElementById('stateprovince-credit-alert').style.display = 'block' : document.getElementById('stateprovince-credit-alert').style.display = 'none';
+                document.getElementById('credit-zippostal').value().length == 0 ? document.getElementById('zippostal-credit-alert').style.display = 'block' : document.getElementById('zippostal-credit-alert').style.display = 'none';
             }       */
 
 
@@ -1005,296 +1005,296 @@ $(document).ready(function(){
         e.preventDefault();  
         
         if(document.getElementById('References-Bank-1-Name').value().length == 0){
-            document.getElementById('bnr1-alert').show(500);
+            document.getElementById('bnr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('bnr1-alert').hide();
+            document.getElementById('bnr1-alert').style.display = 'none';
         };
         if(document.getElementById('References-Bank-1-Address').value().length == 0){
-            document.getElementById('bar1-alert').show(500);
+            document.getElementById('bar1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('bar1-alert').hide();
+            document.getElementById('bar1-alert').style.display = 'none';
         };
         if(document.getElementById('References-Bank-1-Phone').value().length == 0){
-            document.getElementById('bpr1-alert').show(500);
+            document.getElementById('bpr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('bpr1-alert').hide();
+            document.getElementById('bpr1-alert').style.display = 'none';
         };
         if(document.getElementById('References-Bank-1-Acc').value().length == 0){
-            document.getElementById('baccr1-alert').show(500);
+            document.getElementById('baccr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('baccr1-alert').hide();
+            document.getElementById('baccr1-alert').style.display = 'none';
         };
 
         if(document.getElementById('References-Bank-2-Name').value().length == 0){
-            document.getElementById('bnr2-alert').show(500);
+            document.getElementById('bnr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('bnr2-alert').hide();
+            document.getElementById('bnr2-alert').style.display = 'none';
         };
         if(document.getElementById('References-Bank-2-Address').value().length == 0){
-            document.getElementById('bar2-alert').show(500);
+            document.getElementById('bar2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('bar2-alert').hide();
+            document.getElementById('bar2-alert').style.display = 'none';
         };
         if(document.getElementById('References-Bank-2-Phone').value().length == 0){
-            document.getElementById('bpr2-alert').show(500);
+            document.getElementById('bpr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('bpr2-alert').hide();
+            document.getElementById('bpr2-alert').style.display = 'none';
         };
         if(document.getElementById('References-Bank-2-Acc').value().length == 0){
-            document.getElementById('baccr2-alert').show(500);
+            document.getElementById('baccr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('baccr2-alert').hide();
+            document.getElementById('baccr2-alert').style.display = 'none';
         };
 
 
 
         if(document.getElementById('References-Name-R-1').value().length == 0){
-            document.getElementById('pnr1-alert').show(500);
+            document.getElementById('pnr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pnr1-alert').hide();
+            document.getElementById('pnr1-alert').style.display = 'none';
         };
         if(document.getElementById('References-Address-R-1').value().length == 0){
-            document.getElementById('par1-alert').show(500);
+            document.getElementById('par1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('par1-alert').hide();
+            document.getElementById('par1-alert').style.display = 'none';
         };
         if(document.getElementById('References-City-R-1').value().length == 0){
-            document.getElementById('pcr1-alert').show(500);
+            document.getElementById('pcr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pcr1-alert').hide();
+            document.getElementById('pcr1-alert').style.display = 'none';
         };
         if(document.getElementById('References-State-R-1').value().length == 0){
-            document.getElementById('psr1-alert').show(500);
+            document.getElementById('psr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('psr1-alert').hide();
+            document.getElementById('psr1-alert').style.display = 'none';
         };
         if(document.getElementById('References-ZIP-R-1').value().length == 0){
-            document.getElementById('pzr1-alert').show(500);
+            document.getElementById('pzr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pzr1-alert').hide();
+            document.getElementById('pzr1-alert').style.display = 'none';
         };
         if(document.getElementById('References-Phone-R-1').value().length == 0){
-            document.getElementById('ppr1-alert').show(500);
+            document.getElementById('ppr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('ppr1-alert').hide();
+            document.getElementById('ppr1-alert').style.display = 'none';
         };
         if(document.getElementById('References-Fax-R-1').value().length == 0){
-            document.getElementById('pfr1-alert').show(500);
+            document.getElementById('pfr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pfr1-alert').hide();
+            document.getElementById('pfr1-alert').style.display = 'none';
         };
         if(document.getElementById('References-Acc-R-1').value().length == 0){
-            document.getElementById('pacr1-alert').show(500);
+            document.getElementById('pacr1-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pacr1-alert').hide();
+            document.getElementById('pacr1-alert').style.display = 'none';
         };
 
 
 
 
         if(document.getElementById('References-Name-R-2').value().length == 0){
-            document.getElementById('pnr2-alert').show(500);
+            document.getElementById('pnr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pnr2-alert').hide();
+            document.getElementById('pnr2-alert').style.display = 'none';
         };
         if(document.getElementById('References-Address-R-2').value().length == 0){
-            document.getElementById('par2-alert').show(500);
+            document.getElementById('par2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('par2-alert').hide();
+            document.getElementById('par2-alert').style.display = 'none';
         };
         if(document.getElementById('References-City-R-2').value().length == 0){
-            document.getElementById('pcr2-alert').show(500);
+            document.getElementById('pcr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pcr2-alert').hide();
+            document.getElementById('pcr2-alert').style.display = 'none';
         };
         if(document.getElementById('References-State-R-2').value().length == 0){
-            document.getElementById('psr2-alert').show(500);
+            document.getElementById('psr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('psr2-alert').hide();
+            document.getElementById('psr2-alert').style.display = 'none';
         };
         if(document.getElementById('References-ZIP-R-2').value().length == 0){
-            document.getElementById('pzr2-alert').show(500);
+            document.getElementById('pzr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pzr2-alert').hide();
+            document.getElementById('pzr2-alert').style.display = 'none';
         };
         if(document.getElementById('References-Phone-R-2').value().length == 0){
-            document.getElementById('ppr2-alert').show(500);
+            document.getElementById('ppr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('ppr2-alert').hide();
+            document.getElementById('ppr2-alert').style.display = 'none';
         };
         if(document.getElementById('References-Fax-R-2').value().length == 0){
-            document.getElementById('pfr2-alert').show(500);
+            document.getElementById('pfr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pfr2-alert').hide();
+            document.getElementById('pfr2-alert').style.display = 'none';
         };
         if(document.getElementById('References-Acc-R-2').value().length == 0){
-            document.getElementById('pacr2-alert').show(500);
+            document.getElementById('pacr2-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pacr2-alert').hide();
+            document.getElementById('pacr2-alert').style.display = 'none';
         };
 
 
         if(document.getElementById('References-Name-R-3').value().length == 0){
-            document.getElementById('pnr3-alert').show(500);
+            document.getElementById('pnr3-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pnr3-alert').hide();
+            document.getElementById('pnr3-alert').style.display = 'none';
         };
         if(document.getElementById('References-Address-R-3').value().length == 0){
-            document.getElementById('par3-alert').show(500);
+            document.getElementById('par3-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('par3-alert').hide();
+            document.getElementById('par3-alert').style.display = 'none';
         };
         if(document.getElementById('References-City-R-3').value().length == 0){
-            document.getElementById('pcr3-alert').show(500);
+            document.getElementById('pcr3-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pcr3-alert').hide();
+            document.getElementById('pcr3-alert').style.display = 'none';
         };
         if(document.getElementById('References-State-R-3').value().length == 0){
-            document.getElementById('psr3-alert').show(500);
+            document.getElementById('psr3-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('psr3-alert').hide();
+            document.getElementById('psr3-alert').style.display = 'none';
         };
         if(document.getElementById('References-ZIP-R-3').value().length == 0){
-            document.getElementById('pzr3-alert').show(500);
+            document.getElementById('pzr3-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pzr3-alert').hide();
+            document.getElementById('pzr3-alert').style.display = 'none';
         };
         if(document.getElementById('References-Phone-R-3').value().length == 0){
-            document.getElementById('ppr3-alert').show(500);
+            document.getElementById('ppr3-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('ppr3-alert').hide();
+            document.getElementById('ppr3-alert').style.display = 'none';
         };
         if(document.getElementById('References-Fax-R-3').value().length == 0){
-            document.getElementById('pfr3-alert').show(500);
+            document.getElementById('pfr3-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pfr3-alert').hide();
+            document.getElementById('pfr3-alert').style.display = 'none';
         };
         if(document.getElementById('References-Acc-R-3').value().length == 0){
-            document.getElementById('pacr3-alert').show(500);
+            document.getElementById('pacr3-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pacr3-alert').hide();
+            document.getElementById('pacr3-alert').style.display = 'none';
         };
 
 
         if(document.getElementById('References-Name-R-4').value().length == 0){
-            document.getElementById('pnr4-alert').show(500);
+            document.getElementById('pnr4-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pnr4-alert').hide();
+            document.getElementById('pnr4-alert').style.display = 'none';
         };
         if(document.getElementById('References-Address-R-4').value().length == 0){
-            document.getElementById('par4-alert').show(500);
+            document.getElementById('par4-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('par4-alert').hide();
+            document.getElementById('par4-alert').style.display = 'none';
         };
         if(document.getElementById('References-City-R-4').value().length == 0){
-            document.getElementById('pcr4-alert').show(500);
+            document.getElementById('pcr4-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pcr4-alert').hide();
+            document.getElementById('pcr4-alert').style.display = 'none';
         };
         if(document.getElementById('References-State-R-4').value().length == 0){
-            document.getElementById('psr4-alert').show(500);
+            document.getElementById('psr4-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('psr4-alert').hide();
+            document.getElementById('psr4-alert').style.display = 'none';
         };
         if(document.getElementById('References-ZIP-R-4').value().length == 0){
-            document.getElementById('pzr4-alert').show(500);
+            document.getElementById('pzr4-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pzr4-alert').hide();
+            document.getElementById('pzr4-alert').style.display = 'none';
         };
         if(document.getElementById('References-Phone-R-4').value().length == 0){
-            document.getElementById('ppr4-alert').show(500);
+            document.getElementById('ppr4-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('ppr4-alert').hide();
+            document.getElementById('ppr4-alert').style.display = 'none';
         };
         if(document.getElementById('References-Fax-R-4').value().length == 0){
-            document.getElementById('pfr4-alert').show(500);
+            document.getElementById('pfr4-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pfr4-alert').hide();
+            document.getElementById('pfr4-alert').style.display = 'none';
         };
         if(document.getElementById('References-Acc-R-4').value().length == 0){
-            document.getElementById('pacr4-alert').show(500);
+            document.getElementById('pacr4-alert').style.display = 'block';
         }
         else
         {
-            document.getElementById('pacr4-alert').hide();
+            document.getElementById('pacr4-alert').style.display = 'none';
         };
 
         var refb1 = false;            
@@ -1436,27 +1436,27 @@ $(document).ready(function(){
         e.preventDefault();   
         
         if(document.getElementById('compliance-checkbox1') == false){
-            document.getElementById('compliance-alert1').show(500);
+            document.getElementById('compliance-alert1').style.display = 'block';
         }
         else
         {
-        document.getElementById('compliance-alert1').hide();
+        document.getElementById('compliance-alert1').style.display = 'none';
         };
 
         if(document.getElementById('compliance-checkbox2') == false){
-            document.getElementById('compliance-alert2').show(500);
+            document.getElementById('compliance-alert2').style.display = 'block';
         }
         else
         {
-        document.getElementById('compliance-alert2').hide();
+        document.getElementById('compliance-alert2').style.display = 'none';
         };
 
         if(document.getElementById('compliance-checkbox3') == false){
-            document.getElementById('compliance-alert3').show(500);
+            document.getElementById('compliance-alert3').style.display = 'block';
         } 
         else
         {
-            document.getElementById('compliance-alert3').hide();
+            document.getElementById('compliance-alert3').style.display = 'none';
         };  
 
 
