@@ -1,5 +1,12 @@
     $(document).ready(function() {
+        
+        Webflow.require('slider');
+
         $(":input, a").attr("tabindex", "-1");
+
+
+
+        const slider = document.getElementById('#formslider');
         
         /******Step 1 // - Personal Information Slider // WORKING *******************/
         $('#personal-name').keypress(function(event) {
@@ -66,8 +73,8 @@
             if($('#personal-name').val().length !=0 && 
                 $('#personal-email').val().length !=0 && 
                 $('#personal-phone').val().length !=0 && 
-                isNaN(fnumber) == false/* &&
-                index1 != 0*/)
+                isNaN(fnumber) == false &&
+                slider.index != 0)
                 {
                 $('#name-personal-alert').hide();
                 $('#email-personal-alert').hide();
@@ -75,7 +82,8 @@
                 $('#phone-personal-alert2').hide();
                 $('#tradeshow-personal-alert').hide();
                 console.log("conditions met")
-                $('.w-round div:nth-child(2)').trigger('tap');
+                Webflow.require('slider').next();
+                /*$('.w-round div:nth-child(2)').trigger('tap');*/
                 }
             console.log("real end of code")
    
