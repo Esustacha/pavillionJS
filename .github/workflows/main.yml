@@ -23,6 +23,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
 
-        git add $pavillionJS/nccff.js
+        git add $pavillionJS@main/nccff.js
         git commit -m "Update CDN with latest changes"
         git push
