@@ -382,7 +382,7 @@
 
 
         $('#OwnerCheckbox').addEventListener('change', function() {
-            if ($('#OwnerCheckbox').checked) {
+            if ($('#OwnerCheckbox').checked == true) {
                 $('#ctc-owner-name').disabled = false;
                 $('#contact-email-owner').disabled = false;
             } else {
@@ -392,7 +392,7 @@
                 $('#contact-email-owner').value = '';
         }});
         $('#PayableCheckbox').addEventListener('change', function() {
-            if ($('#PayableCheckbox').checked) {
+            if ($('#PayableCheckbox').checked == true) {
                 $('#ctc-accounts-name').disabled = false;
                 $('#contact-email-accounts').disabled = false;
             } else {
@@ -402,7 +402,7 @@
                 $('#contact-email-accounts').value = '';
         }});
         $('#BuyerCheckbox').addEventListener('change', function() {
-            if ($('#BuyerCheckbox').checked) {
+            if ($('#BuyerCheckbox').checked == true) {
                 $('#ctc-buyer-name').disabled = false;
                 $('#contact-email-buyer').disabled = false;
             } else {
@@ -412,7 +412,7 @@
                 $('#contact-email-buyer').value = '';
         }});
         $('#StoreCheckbox').addEventListener('change', function() {
-            if ($('#StoreCheckbox').checked) {
+            if ($('#StoreCheckbox').checked == true) {
                 $('#ctc-stomanager-name').disabled = false;
                 $('#contact-email-stomanager').disabled = false;
             } else {
@@ -422,7 +422,7 @@
                 $('#contact-email-stomanager').value = '';
         }});
         $('#MarketingCheckbox').addEventListener('change', function() {
-            if ($('#MarketingCheckbox').checked) {
+            if ($('#MarketingCheckbox').checked == true) {
                 $('#ctc-marketing-name').disabled = false;
                 $('#contact-email-marketing').disabled = false;
             } else {
@@ -432,7 +432,7 @@
                 $('#contact-email-marketing').value = '';
         }});
         $('#OfficeCheckbox').addEventListener('change', function() {
-            if ($('#OfficeCheckbox').checked) {
+            if ($('#OfficeCheckbox').checked == true) {
                 $('#ctc-offmanager-name').disabled = false;
                 $('#contact-email-offmanager').disabled = false;
             } else {
@@ -442,7 +442,7 @@
                 $('#contact-email-offmanager').value = '';
         }});
         $('#WebsiteCheckbox').addEventListener('change', function() {
-            if ($('#WebsiteCheckbox').checked) {
+            if ($('#WebsiteCheckbox').checked == true) {
                 $('#ctc-website-name').disabled = false;
                 $('#contact-email-website').disabled = false;
             } else {
@@ -452,7 +452,7 @@
                 $('#contact-email-website').value = '';
         }});
         $('#SalesCheckbox').addEventListener('change', function() {
-            if ($('#SalesCheckbox').checked) {
+            if ($('#SalesCheckbox').checked == true) {
                 $('#ctc-sales-name').disabled = false;
                 $('#contact-email-sales').disabled = false;
             } else {
