@@ -3,7 +3,7 @@ name: Refresh CDN Cache
 on:
   push:
     paths:
-      - 'filename-to-watch'
+      - /nccff.js
 
 jobs:
   refresh-cdn:
