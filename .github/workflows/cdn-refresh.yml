@@ -1,0 +1,18 @@
+name: Refresh CDN Cache
+
+on:
+  push:
+    paths:
+      - 'filename-to-watch'
+
+jobs:
+  refresh-cdn:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Purge CDN cache
+        run: |
+          curl -X PURGE https://cdn.jsdelivr.net/gh/Esustacha/pavillionJS/nccff.js
