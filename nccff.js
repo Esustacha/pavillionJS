@@ -2,7 +2,7 @@ $(document).ready(function(){
         
     Webflow.require('slider');
 
-    document.getElementById(":input, a").attr("tabindex", "-1");
+    /*document.getElementById(":input, a").attr("tabindex", "-1");*/
 
 
 
