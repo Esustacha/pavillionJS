@@ -1,4 +1,6 @@
-$(document).ready(function(){
+
+
+/*$(document).ready(function(){*/
         
     Webflow.require('slider');
 
@@ -1473,4 +1475,4 @@ $(document).ready(function(){
         }           
     });
 
-});
+/*});*/
