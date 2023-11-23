@@ -1,6 +1,4 @@
-Webflow.require('slider');
-
-const slider = document.getElementById('formslider');
+let slider = document.getElementById('formslider');
 
 /******Step 1 // - Personal Information Slider // WORKING *******************/
 document.getElementById('personal-name').addEventListener('keydown', function(event) {
@@ -76,7 +74,8 @@ document.getElementById('name-step').addEventListener('click', function(e) {
         document.getElementById('phone-personal-alert2').style.display = 'none';
         /*document.getElementById('tradeshow-personal-alert').style.display = 'none';*/
         console.log("conditions met")
-        Webflow.require('slider').next();
+        slider.index = 1
+        /*Webflow.require('slider').next();*/
         /*document.getElementById('.w-round div:nth-child(2)').trigger('tap');*/
         }
     console.log("real end of code")
