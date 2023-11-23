@@ -171,7 +171,7 @@ document.getElementById('store-step').addEventListener('click', function(e) {
     console.log("ESHPRINT2");
     e.preventDefault();             
 
-    var fnumber2 = document.forms[0].elements["store-phone"].valueue;
+    var fnumber2 = document.forms[0].elements["store-phone"].value;
     console.log(fnumber2)
 
     if(document.getElementById('store-name').value.length == 0){
@@ -390,8 +390,8 @@ document.getElementById('OwnerCheckbox').addEventListener('change', function() {
     } else {
         document.getElementById('ctc-owner-name').disabled = true;
         document.getElementById('contact-email-owner').disabled = true;
-        document.getElementById('ctc-owner-name').valueue = '';
-        document.getElementById('contact-email-owner').valueue = '';
+        document.getElementById('ctc-owner-name').value = '';
+        document.getElementById('contact-email-owner').value = '';
     }
 });
 document.getElementById('PayableCheckbox').addEventListener('change', function() {
@@ -401,8 +401,8 @@ document.getElementById('PayableCheckbox').addEventListener('change', function()
     } else {
         document.getElementById('ctc-accounts-name').disabled = true;
         document.getElementById('contact-email-accounts').disabled = true;
-        document.getElementById('ctc-accounts-name').valueue = '';
-        document.getElementById('contact-email-accounts').valueue = '';
+        document.getElementById('ctc-accounts-name').value = '';
+        document.getElementById('contact-email-accounts').value = '';
     }
 });
 document.getElementById('BuyerCheckbox').addEventListener('change', function() {
@@ -412,8 +412,8 @@ document.getElementById('BuyerCheckbox').addEventListener('change', function() {
     } else {
         document.getElementById('ctc-buyer-name').disabled = true;
         document.getElementById('contact-email-buyer').disabled = true;
-        document.getElementById('ctc-buyer-name').valueue = '';
-        document.getElementById('contact-email-buyer').valueue = '';
+        document.getElementById('ctc-buyer-name').value = '';
+        document.getElementById('contact-email-buyer').value = '';
     }
 });
 document.getElementById('StoreCheckbox').addEventListener('change', function() {
@@ -423,8 +423,8 @@ document.getElementById('StoreCheckbox').addEventListener('change', function() {
     } else {
         document.getElementById('ctc-stomanager-name').disabled = true;
         document.getElementById('contact-email-stomanager').disabled = true;
-        document.getElementById('ctc-stomanager-name').valueue = '';
-        document.getElementById('contact-email-stomanager').valueue = '';
+        document.getElementById('ctc-stomanager-name').value = '';
+        document.getElementById('contact-email-stomanager').value = '';
     }
 });
 document.getElementById('MarketingCheckbox').addEventListener('change', function() {
@@ -434,8 +434,8 @@ document.getElementById('MarketingCheckbox').addEventListener('change', function
     } else {
         document.getElementById('ctc-marketing-name').disabled = true;
         document.getElementById('contact-email-marketing').disabled = true;
-        document.getElementById('ctc-marketing-name').valueue = '';
-        document.getElementById('contact-email-marketing').valueue = '';
+        document.getElementById('ctc-marketing-name').value = '';
+        document.getElementById('contact-email-marketing').value = '';
     }
 });
 document.getElementById('OfficeCheckbox').addEventListener('change', function() {
@@ -445,8 +445,8 @@ document.getElementById('OfficeCheckbox').addEventListener('change', function() 
     } else {
         document.getElementById('ctc-offmanager-name').disabled = true;
         document.getElementById('contact-email-offmanager').disabled = true;
-        document.getElementById('ctc-offmanager-name').valueue = '';
-        document.getElementById('contact-email-offmanager').valueue = '';
+        document.getElementById('ctc-offmanager-name').value = '';
+        document.getElementById('contact-email-offmanager').value = '';
     }
 });
 document.getElementById('WebsiteCheckbox').addEventListener('change', function() {
@@ -456,8 +456,8 @@ document.getElementById('WebsiteCheckbox').addEventListener('change', function()
     } else {
         document.getElementById('ctc-website-name').disabled = true;
         document.getElementById('contact-email-website').disabled = true;
-        document.getElementById('ctc-website-name').valueue = '';
-        document.getElementById('contact-email-website').valueue = '';
+        document.getElementById('ctc-website-name').value = '';
+        document.getElementById('contact-email-website').value = '';
     }
 });
 document.getElementById('SalesCheckbox').addEventListener('change', function() {
@@ -467,8 +467,8 @@ document.getElementById('SalesCheckbox').addEventListener('change', function() {
     } else {
         document.getElementById('ctc-sales-name').disabled = true;
         document.getElementById('contact-email-sales').disabled = true;
-        document.getElementById('ctc-sales-name').valueue = '';
-        document.getElementById('contact-email-sales').valueue = '';
+        document.getElementById('ctc-sales-name').value = '';
+        document.getElementById('contact-email-sales').value = '';
     }
 });
 
@@ -600,7 +600,7 @@ document.getElementById('credit-zippostal').addEventListener('keydown', function
 });
 
 document.getElementById('credit-number').addEventListener('input', function () {
-    this.valueue = this.valueue.slice(0, 16);
+    this.value = this.value.slice(0, 16);
 });
 
 
@@ -639,8 +639,8 @@ document.getElementById('credit-step').addEventListener('click', function(e) {
     console.log("ESHPRINT4");
     e.preventDefault();             
 
-    var fnumber3 = document.forms[0].elements["credit-number"].valueue;
-    var fnumber4 = document.forms[0].elements["credit-security"].valueue;
+    var fnumber3 = document.forms[0].elements["credit-number"].value;
+    var fnumber4 = document.forms[0].elements["credit-security"].value;
 
     if (validateCreditCardNumber(fnumber3) == true) {
         document.getElementById('name-credit-alert').style.display = 'none';                    
@@ -1466,5 +1466,3 @@ document.getElementById('submit-step').addEventListener('click', function(e) {
 
     }           
 });
-
-/*});*/
