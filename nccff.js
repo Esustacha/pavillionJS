@@ -473,7 +473,7 @@ document.getElementById('SalesCheckbox').addEventListener('change', function() {
 });
 
 
-document.getElementById('storecontact-step-back').addEventListener('click', function(e) {
+document.getElementById('contact-step-back').addEventListener('click', function(e) {
     console.log("ESHPRINT4");
     e.preventDefault(); 
     document.getElementById('.w-round div:nth-child(2)').trigger('tap');
