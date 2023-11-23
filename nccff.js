@@ -568,6 +568,8 @@ document.getElementById('Billing-Same-as-Store-Address').addEventListener('chang
         document.getElementById('credit-zippostal').disabled = false;
     };
 });
+
+/*issue?*/
 document.getElementById('credit-name').addEventListener('keydown', function(event) {
     if (event.keyCode == 13) {
         event.preventDefault();
