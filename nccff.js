@@ -541,31 +541,31 @@ document.getElementById('Billing-Same-as-Store-Address').addEventListener('chang
         event.preventDefault();
     }
     if(document.getElementById('Billing-Same-as-Store-Address') == true){
-        document.getElementById('credit-address1').value = document.getElementById('store-address1').value;
+        document.getElementById('credit-address').value = document.getElementById('store-address1').value;
         document.getElementById('credit-address2').value = document.getElementById('store-address2').value;
         document.getElementById('credit-city').value = document.getElementById('store-city').value;
         document.getElementById('credit-stateprovince').value = document.getElementById('store-stateprovince').value;
-        document.getElementById('credit-postalzip').value = document.getElementById('store-zippostalcode').value;
+        document.getElementById('credit-zippostal').value = document.getElementById('store-zippostalcode').value;
 
-        document.getElementById('credit-address1').disabled = true;
+        document.getElementById('credit-address').disabled = true;
         document.getElementById('credit-address2').disabled = true;
         document.getElementById('credit-city').disabled = true;
         document.getElementById('credit-stateprovince').disabled = true;
-        document.getElementById('credit-postalzip').disabled = true;
+        document.getElementById('credit-zippostal').disabled = true;
     }
     else
     {
-        document.getElementById('credit-address1').value = ('');
+        document.getElementById('credit-address').value = ('');
         document.getElementById('credit-address2').value = ('');
         document.getElementById('credit-city').value = ('');
         document.getElementById('credit-stateprovince').value = ('');
-        document.getElementById('credit-postalzip').value = ('');
+        document.getElementById('credit-zippostal').value = ('');
 
-        document.getElementById('credit-address1').disabled = false;
+        document.getElementById('credit-address').disabled = false;
         document.getElementById('credit-address2').disabled = false;
         document.getElementById('credit-city').disabled = false;
         document.getElementById('credit-stateprovince').disabled = false;
-        document.getElementById('credit-postalzip').disabled = false;
+        document.getElementById('credit-zippostal').disabled = false;
     };
 });
 document.getElementById('credit-storename').addEventListener('keydown', function(event) {
