@@ -74,7 +74,7 @@ document.getElementById('name-step').addEventListener('click', function(e) {
         document.getElementById('email-personal-alert').style.display = 'none';
         document.getElementById('phone-personal-alert').style.display = 'none';
         document.getElementById('phone-personal-alert2').style.display = 'none';
-        document.getElementById('tradeshow-personal-alert').style.display = 'none';
+        /*document.getElementById('tradeshow-personal-alert').style.display = 'none';*/
         console.log("conditions met")
         Webflow.require('slider').next();
         /*document.getElementById('.w-round div:nth-child(2)').trigger('tap');*/
