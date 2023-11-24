@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     let slider = document.getElementById('formslider');
+    let formstepslide1 = document.getElementById('verificationform-formstepslide1');
     let formstepslide2 = document.getElementById('verificationform-formstepslide2');
     let formstepslide3 = document.getElementById('verificationform-formstepslide3');
     let formstepslide4 = document.getElementById('verificationform-formstepslide4');
