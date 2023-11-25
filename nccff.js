@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("ESHPRINT2");
         e.preventDefault();             
 
-        var fnumber2 = document.forms[0].elements["store-phone"].value;
+        let fnumber2 = document.forms[0].elements["store-phone"].value;
         console.log(fnumber2)
 
         if(document.getElementById('store-name').value.length == 0){
@@ -285,6 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('store-stateprovince').value.length !=0 &&
             document.getElementById('store-zippostalcode').value.length !=0 &&
             document.getElementById('store-email').value.length !=0 &&
+            document.getElementById('store-phone').value.length !=0 &&
             isNaN(fnumber2) == false)
             {
             console.log("conditions met")
@@ -560,7 +561,7 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
 
         if(document.getElementById('ctc-owner-name').value.length != 0 && document.getElementById('contact-email-owner').value.length != 0 &&
-            document.getElementById('ctc-accounts-name').value.length != 0 && document.getElementById('contact-accounts-owner').value.length != 0) {
+            document.getElementById('ctc-accounts-name').value.length != 0 && document.getElementById('contact-email-accounts').value.length != 0) {
 
             formstepslide4.style.display = "block";
             let nextButton = document.querySelector('#formslider .w-slider-arrow-right');
@@ -582,7 +583,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('ctc-owner-name-alert').style.display = 'none';
             };
     
-            if(document.getElementById('ctc-accounts-name').value.length === 0 || document.getElementById('contact-accounts-owner').value.length === 0){
+            if(document.getElementById('ctc-accounts-name').value.length === 0 || document.getElementById('contact-email-accounts').value.length === 0){
                 document.getElementById('ctc-accounts-name-alert').style.display = 'block';
             }
             else
