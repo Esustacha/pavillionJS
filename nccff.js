@@ -438,6 +438,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    document.getElementById('ctc-buyer-name').disabled = false;
+    document.getElementById('contact-email-buyer').disabled = false;
+    document.getElementById('ctc-stomanager-name').disabled = false;
+    document.getElementById('contact-email-stomanager').disabled = false;
+    document.getElementById('ctc-marketing-name').disabled = false;
+    document.getElementById('contact-email-marketing').disabled = false;
+    document.getElementById('ctc-offmanager-name').disabled = false;
+    document.getElementById('contact-email-offmanager').disabled = false;
+    document.getElementById('ctc-website-name').disabled = false;
+    document.getElementById('contact-email-website').disabled = false;
+    document.getElementById('ctc-sales-name').disabled = false;
+    document.getElementById('contact-email-sales').disabled = false;
+
+
 
     document.getElementById('OwnerCheckbox').addEventListener('change', function() {
         if (document.getElementById('OwnerCheckbox').checked == true) {
@@ -545,30 +559,46 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("ESHPRINT3");
         e.preventDefault();
 
-        if(document.getElementById('ctc-owner-name').value.length == 0 || document.getElementById('contact-email-owner').value.length == 0){
-            document.getElementById('ctc-owner-name-alert').style.display = 'block';
-        }
-        else
-        {
-            document.getElementById('ctc-owner-name-alert').style.display = 'none';
-        };
+        if(document.getElementById('ctc-owner-name').value.length != 0 && document.getElementById('contact-email-owner').value.length != 0 &&
+            document.getElementById('ctc-accounts-name').value.length != 0 && document.getElementById('contact-accounts-owner').value.length != 0) {
 
-        if(document.getElementById('ctc-accounts-name').value.length == 0 || document.getElementById('contact-accounts-owner').value.length == 0){
-            document.getElementById('ctc-accounts-name-alert').style.display = 'block';
+            formstepslide4.style.display = "block";
+            let nextButton = document.querySelector('#formslider .w-slider-arrow-right');
+            if (nextButton) {
+                nextButton.click();
+            }
+            formstepslide3.style.display = "none";
+
+            console.log("pass checked");
+
+
+        } else {
+
+            if(document.getElementById('ctc-owner-name').value.length === 0 || document.getElementById('contact-email-owner').value.length === 0){
+                document.getElementById('ctc-owner-name-alert').style.display = 'block';
+            }
+            else
+            {
+                document.getElementById('ctc-owner-name-alert').style.display = 'none';
+            };
+    
+            if(document.getElementById('ctc-accounts-name').value.length === 0 || document.getElementById('contact-accounts-owner').value.length === 0){
+                document.getElementById('ctc-accounts-name-alert').style.display = 'block';
+            }
+            else
+            {
+                document.getElementById('ctc-accounts-name-alert').style.display = 'none';
+            };
+
         }
-        else
-        {
-            document.getElementById('ctc-accounts-name-alert').style.display = 'none';
-        };
+        
+        
+        
+        
 
         /*document.getElementById('.w-round div:nth-child(4)').trigger('tap');*/
 
-        formstepslide4.style.display = "block";
-        let nextButton = document.querySelector('#formslider .w-slider-arrow-right');
-        if (nextButton) {
-            nextButton.click();
-        }
-        formstepslide3.style.display = "none";
+        
     });   
 
 
@@ -610,13 +640,13 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
         }
         if(document.getElementById('Billing-Same-as-Store-Address') == true){
-            document.getElementById('credit-address').value = document.getElementById('store-address1').value;
+            document.getElementById('credit-address1').value = document.getElementById('store-address1').value;
             document.getElementById('credit-address2').value = document.getElementById('store-address2').value;
             document.getElementById('credit-city').value = document.getElementById('store-city').value;
             document.getElementById('credit-stateprovince').value = document.getElementById('store-stateprovince').value;
             document.getElementById('credit-zippostal').value = document.getElementById('store-zippostalcode').value;
 
-            document.getElementById('credit-address').disabled = true;
+            document.getElementById('credit-address1').disabled = true;
             document.getElementById('credit-address2').disabled = true;
             document.getElementById('credit-city').disabled = true;
             document.getElementById('credit-stateprovince').disabled = true;
@@ -624,13 +654,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else
         {
-            document.getElementById('credit-address').value = ('');
+            document.getElementById('credit-address1').value = ('');
             document.getElementById('credit-address2').value = ('');
             document.getElementById('credit-city').value = ('');
             document.getElementById('credit-stateprovince').value = ('');
             document.getElementById('credit-zippostal').value = ('');
 
-            document.getElementById('credit-address').disabled = false;
+            document.getElementById('credit-address1').disabled = false;
             document.getElementById('credit-address2').disabled = false;
             document.getElementById('credit-city').disabled = false;
             document.getElementById('credit-stateprovince').disabled = false;
@@ -643,7 +673,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
         }
     });
-    document.getElementById('credit-address').addEventListener('keydown', function(event) {
+    document.getElementById('credit-address1').addEventListener('keydown', function(event) {
         if (event.keyCode == 13) {
             event.preventDefault();
         }
@@ -703,7 +733,7 @@ document.addEventListener('DOMContentLoaded', function () {
         /*document.getElementById('.w-round div:nth-child(3)').trigger('tap');*/
 
         formstepslide3.style.display = "block";
-        let nextButton = document.querySelector('#formslider .w-slider-arrow-right');
+        let nextButton = document.querySelector('#formslider .w-slider-arrow-left');
         if (nextButton) {
             nextButton.click();
         }
