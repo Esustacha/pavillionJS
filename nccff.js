@@ -439,18 +439,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    document.getElementById('ctc-buyer-name').disabled = false;
-    document.getElementById('contact-email-buyer').disabled = false;
-    document.getElementById('ctc-stomanager-name').disabled = false;
-    document.getElementById('contact-email-stomanager').disabled = false;
-    document.getElementById('ctc-marketing-name').disabled = false;
-    document.getElementById('contact-email-marketing').disabled = false;
-    document.getElementById('ctc-offmanager-name').disabled = false;
-    document.getElementById('contact-email-offmanager').disabled = false;
-    document.getElementById('ctc-website-name').disabled = false;
-    document.getElementById('contact-email-website').disabled = false;
-    document.getElementById('ctc-sales-name').disabled = false;
-    document.getElementById('contact-email-sales').disabled = false;
+    document.getElementById('ctc-buyer-name').disabled = true;
+    document.getElementById('contact-email-buyer').disabled = true;
+    document.getElementById('ctc-stomanager-name').disabled = true;
+    document.getElementById('contact-email-stomanager').disabled = true;
+    document.getElementById('ctc-marketing-name').disabled = true;
+    document.getElementById('contact-email-marketing').disabled = true;
+    document.getElementById('ctc-offmanager-name').disabled = true;
+    document.getElementById('contact-email-offmanager').disabled = true;
+    document.getElementById('ctc-website-name').disabled = true;
+    document.getElementById('contact-email-website').disabled = true;
+    document.getElementById('ctc-sales-name').disabled = true;
+    document.getElementById('contact-email-sales').disabled = true;
 
 
 
@@ -636,11 +636,15 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
         }
     });
-    document.getElementById('Billing-Same-as-Store-Address').addEventListener('change', (event) =>  {
+    document.getElementById('billing-same-as-store-address').addEventListener('change', (event) =>  {
         if (event.keyCode == 13) {
             event.preventDefault();
         }
-        if(document.getElementById('Billing-Same-as-Store-Address') == true){
+        if(document.getElementById('billing-same-as-store-address').checked){
+
+            console.log(document.getElementById('store-address1').value);
+
+
             document.getElementById('credit-address1').value = document.getElementById('store-address1').value;
             document.getElementById('credit-address2').value = document.getElementById('store-address2').value;
             document.getElementById('credit-city').value = document.getElementById('store-city').value;
@@ -782,9 +786,9 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('security-credit-alert').style.display = 'none';
         };
 
-        var index2 = document.forms[0].elements["credit-month"].selectedIndex 
-        var index3 = document.forms[0].elements["credit-year"].selectedIndex 
-        var index4 = document.forms[0].elements["credit-cardtype"].selectedIndex 
+        let index2 = document.forms[0].elements["credit-month"].selectedIndex 
+        let index3 = document.forms[0].elements["credit-year"].selectedIndex 
+        let index4 = document.forms[0].elements["credit-cardtype"].selectedIndex 
 
         if(index2 == 0)
         {
@@ -858,7 +862,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             /// MUST DELETE, DOUBLE FUNCTIONALITY, KEEP FOR IF LAMBDA DEV 
 
-            /*if(document.getElementById('Billing-Same-as-Store-Address') == true ){
+            /*if(document.getElementById('billing-same-as-store-address') == true ){
                 document.getElementById('credit-address1').value.length == 0 ? document.getElementById('address-credit-alert').style.display = 'block' : document.getElementById('address-credit-alert').style.display = 'none';
                 document.getElementById('credit-address2').value.length == 0 ? document.getElementById('address2-credit-alert').style.display = 'block' : document.getElementById('address2-credit-alert').style.display = 'none';
                 document.getElementById('credit-city').value.length == 0 ? document.getElementById('city-credit-alert').style.display = 'block' : document.getElementById('city-credit-alert').style.display = 'none';
@@ -867,7 +871,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }       */
 
 
-        if(document.getElementById('credit-card-name').value.length !=0 && 
+        if(document.getElementById('credit-name').value.length !=0 && 
         isNaN(fnumber3) == false &&
         index2 != 0 &&
         index3 != 0 &&
