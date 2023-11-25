@@ -642,10 +642,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if(document.getElementById('billing-same-as-store-address').checked){
 
-            console.log(document.getElementById('store-address1').value);
+            console.log(document.getElementById('store-address').value);
 
 
-            document.getElementById('credit-address1').value = document.getElementById('store-address1').value;
+            document.getElementById('credit-address1').value = document.getElementById('store-address').value;
             document.getElementById('credit-address2').value = document.getElementById('store-address2').value;
             document.getElementById('credit-city').value = document.getElementById('store-city').value;
             document.getElementById('credit-stateprovince').value = document.getElementById('store-stateprovince').value;
