@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
 
 
-        var fnumber = document.forms[0].elements["personal-phone"].value;
+        let fnumber = document.forms[0].elements["personal-phone"].value;
         console.log(fnumber)
 
         if(document.getElementById('personal-name').value.length == 0){
@@ -751,8 +751,8 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("ESHPRINT4");
         e.preventDefault();             
 
-        var fnumber3 = document.forms[0].elements["credit-number"].value;
-        var fnumber4 = document.forms[0].elements["credit-security"].value;
+        let fnumber3 = document.forms[0].elements["credit-number"].value;
+        let fnumber4 = document.forms[0].elements["credit-security"].value;
 
         if (validateCreditCardNumber(fnumber3) == true) {
             document.getElementById('name-credit-alert').style.display = 'none';                    
@@ -1417,12 +1417,12 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('pacr4-alert').style.display = 'none';
         };
 
-        var refb1 = false;            
-        var refb2 = false; 
-        var refp1 = false;             
-        var refp2 = false; 
-        var refp3 = false;             
-        var refp4 = false; 
+        let refb1 = false;            
+        let refb2 = false; 
+        let refp1 = false;             
+        let refp2 = false; 
+        let refp3 = false;             
+        let refp4 = false; 
 
         if(document.getElementById('References-Bank-1-Name').value.length > 0 &&
             document.getElementById('References-Bank-1-Address').value.length == 0 &&
@@ -1525,7 +1525,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else
         {
-            log(refb1,refb2,refp1,refp2,refp3,refp4)
+            console.log(refb1,refb2,refp1,refp2,refp3,refp4)
         };   
     });
 
@@ -1569,7 +1569,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("ESHPRINT10");
         e.preventDefault();   
         
-        if(document.getElementById('compliance-checkbox1') == false){
+        if(document.getElementById('compliance-checkbox1').checked == false){
             document.getElementById('compliance-alert1').style.display = 'block';
         }
         else
@@ -1577,7 +1577,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('compliance-alert1').style.display = 'none';
         };
 
-        if(document.getElementById('compliance-checkbox2') == false){
+        if(document.getElementById('compliance-checkbox2').checked == false){
             document.getElementById('compliance-alert2').style.display = 'block';
         }
         else
@@ -1585,7 +1585,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('compliance-alert2').style.display = 'none';
         };
 
-        if(document.getElementById('compliance-checkbox3') == false){
+        if(document.getElementById('compliance-checkbox3').checked == false){
             document.getElementById('compliance-alert3').style.display = 'block';
         } 
         else
@@ -1594,22 +1594,22 @@ document.addEventListener('DOMContentLoaded', function () {
         };  
 
 
-        if(document.getElementById('compliance-checkbox1') == true &&
-            document.getElementById('compliance-checkbox2') == true &&
-            document.getElementById('compliance-checkbox3') == true){ 
+        if(document.getElementById('compliance-checkbox1').checked  &&
+            document.getElementById('compliance-checkbox2').checked &&
+            document.getElementById('compliance-checkbox3').checked) { 
 
-            console.log("conditions met");
+                console.log("conditions met");
 
-            document.getElementById('submit-step').trigger('click');
+                document.getElementById('submit-step').trigger('click');
 
-            formstepslide1.style.display = "none";
-            formstepslide2.style.display = "none";
-            formstepslide3.style.display = "none";
-            formstepslide4.style.display = "none";
-            formstepslide5.style.display = "none";
+                formstepslide1.style.display = "none";
+                formstepslide2.style.display = "none";
+                formstepslide3.style.display = "none";
+                formstepslide4.style.display = "none";
+                formstepslide5.style.display = "none";
 
 
-            console.log("real end of code");   
+                console.log("real end of code");   
 
         }           
     });
