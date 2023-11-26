@@ -1600,7 +1600,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 console.log("conditions met");
 
-                document.getElementById('submit-step').trigger('click');
+                document.getElementById('submit-step').click();
 
                 formstepslide1.style.display = "none";
                 formstepslide2.style.display = "none";
