@@ -1425,9 +1425,9 @@ document.addEventListener('DOMContentLoaded', function () {
         let refp4 = false; 
 
         if(document.getElementById('References-Bank-1-Name').value.length > 0 &&
-            document.getElementById('References-Bank-1-Address').value.length == 0 &&
-            document.getElementById('References-Bank-1-Phone').value.length == 0 &&
-            document.getElementById('References-Bank-1-Acc').value.length == 0){
+            document.getElementById('References-Bank-1-Address').value.length != 0 &&
+            document.getElementById('References-Bank-1-Phone').value.length != 0 &&
+            document.getElementById('References-Bank-1-Acc').value.length != 0){
             refb1 = true;
         }
         else
@@ -1436,9 +1436,9 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         if(document.getElementById('References-Bank-2-Name').value.length > 0 &&
-        document.getElementById('References-Bank-2-Address').value.length == 0 &&
-        document.getElementById('References-Bank-2-Phone').value.length == 0 &&
-        document.getElementById('References-Bank-2-Acc').value.length == 0){
+        document.getElementById('References-Bank-2-Address').value.length != 0 &&
+        document.getElementById('References-Bank-2-Phone').value.length != 0 &&
+        document.getElementById('References-Bank-2-Acc').value.length != 0){
             refb2 = true;
         }
         else
@@ -1447,13 +1447,13 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         if(document.getElementById('References-Name-R-1').value.length > 0 &&
-        document.getElementById('References-Address-R-1').value.length == 0 &&
-        document.getElementById('References-City-R-1').value.length == 0 &&
-        document.getElementById('References-State-R-1').value.length == 0 &&
-        document.getElementById('References-ZIP-R-1').value.length == 0 &&
-        document.getElementById('References-Phone-R-1').value.length == 0 &&
-        document.getElementById('References-Fax-R-1').value.length == 0 &&
-        document.getElementById('References-Acc-R-1').value.length == 0){
+        document.getElementById('References-Address-R-1').value.length != 0 &&
+        document.getElementById('References-City-R-1').value.length != 0 &&
+        document.getElementById('References-State-R-1').value.length != 0 &&
+        document.getElementById('References-ZIP-R-1').value.length != 0 &&
+        document.getElementById('References-Phone-R-1').value.length != 0 &&
+        document.getElementById('References-Fax-R-1').value.length != 0 &&
+        document.getElementById('References-Acc-R-1').value.length != 0){
             refp1 = true;
         }
         else
@@ -1462,13 +1462,13 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         if(document.getElementById('References-Name-R-2').value.length > 0 &&
-        document.getElementById('References-Address-R-2').value.length == 0 &&
-        document.getElementById('References-City-R-2').value.length == 0 &&
-        document.getElementById('References-State-R-2').value.length == 0 &&
-        document.getElementById('References-ZIP-R-2').value.length == 0 &&
-        document.getElementById('References-Phone-R-2').value.length == 0 &&
-        document.getElementById('References-Fax-R-2').value.length == 0 &&
-        document.getElementById('References-Acc-R-2').value.length == 0){
+        document.getElementById('References-Address-R-2').value.length != 0 &&
+        document.getElementById('References-City-R-2').value.length != 0 &&
+        document.getElementById('References-State-R-2').value.length != 0 &&
+        document.getElementById('References-ZIP-R-2').value.length != 0 &&
+        document.getElementById('References-Phone-R-2').value.length != 0 &&
+        document.getElementById('References-Fax-R-2').value.length != 0 &&
+        document.getElementById('References-Acc-R-2').value.length != 0){
             refp2 = true;
         }
         else
@@ -1477,13 +1477,13 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         if(document.getElementById('References-Name-R-3').value.length > 0 &&
-        document.getElementById('References-Address-R-3').value.length == 0 &&
-        document.getElementById('References-City-R-3').value.length == 0 &&
-        document.getElementById('References-State-R-3').value.length == 0 &&
-        document.getElementById('References-ZIP-R-3').value.length == 0 &&
-        document.getElementById('References-Phone-R-3').value.length == 0 &&
-        document.getElementById('References-Fax-R-3').value.length == 0 &&
-        document.getElementById('References-Acc-R-3').value.length == 0){
+        document.getElementById('References-Address-R-3').value.length != 0 &&
+        document.getElementById('References-City-R-3').value.length != 0 &&
+        document.getElementById('References-State-R-3').value.length != 0 &&
+        document.getElementById('References-ZIP-R-3').value.length != 0 &&
+        document.getElementById('References-Phone-R-3').value.length != 0 &&
+        document.getElementById('References-Fax-R-3').value.length != 0 &&
+        document.getElementById('References-Acc-R-3').value.length != 0){
             refp3 = true;
         }
         else
@@ -1492,13 +1492,13 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         if(document.getElementById('References-Name-R-4').value.length > 0 &&
-        document.getElementById('References-Address-R-4').value.length == 0 &&
-        document.getElementById('References-City-R-4').value.length == 0 &&
-        document.getElementById('References-State-R-4').value.length == 0 &&
-        document.getElementById('References-ZIP-R-4').value.length == 0 &&
-        document.getElementById('References-Phone-R-4').value.length == 0 &&
-        document.getElementById('References-Fax-R-4').value.length == 0 &&
-        document.getElementById('References-Acc-R-4').value.length == 0){
+        document.getElementById('References-Address-R-4').value.length != 0 &&
+        document.getElementById('References-City-R-4').value.length != 0 &&
+        document.getElementById('References-State-R-4').value.length != 0 &&
+        document.getElementById('References-ZIP-R-4').value.length != 0 &&
+        document.getElementById('References-Phone-R-4').value.length != 0 &&
+        document.getElementById('References-Fax-R-4').value.length != 0 &&
+        document.getElementById('References-Acc-R-4').value.length != 0){
             refp4 = true;
         }
         else
