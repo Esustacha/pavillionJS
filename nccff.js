@@ -1567,7 +1567,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('submit-step').addEventListener('click', function(e) {
         console.log("ESHPRINT10");
-        e.preventDefault();   
+          
         
         if(document.getElementById('compliance-checkbox1').checked == false){
             document.getElementById('compliance-alert1').style.display = 'block';
@@ -1600,8 +1600,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 console.log("conditions met");
 
-                document.getElementById('submit-step').click();
-
                 formstepslide1.style.display = "none";
                 formstepslide2.style.display = "none";
                 formstepslide3.style.display = "none";
@@ -1611,7 +1609,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 console.log("real end of code");   
 
-        }           
+        } else {
+            e.preventDefault(); 
+        }          
     });
 
 });
