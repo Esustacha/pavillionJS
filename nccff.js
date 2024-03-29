@@ -604,8 +604,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-    /******Step 4 // - Credit Information Slider // MUST TEST *******************/
+    /* */
+    /******Step 4 // - Credit Information Slider // MUST TEST *******************
     document.getElementById('credit-name').addEventListener('keydown', function(event) {
         if (event.keyCode == 13) {
             event.preventDefault();
@@ -735,7 +735,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('credit-step-back').addEventListener('click', function(e) {
         console.log("ESHPRINT6");
         e.preventDefault(); 
-        /*document.getElementById('.w-round div:nth-child(3)').trigger('tap');*/
+        /*        document.getElementById('.w-round div:nth-child(3)').trigger('tap');            *-/
 
         formstepslide3.style.display = "block";
         let nextButton = document.querySelector('#formslider .w-slider-arrow-left');
@@ -868,7 +868,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('credit-city').value.length == 0 ? document.getElementById('city-credit-alert').style.display = 'block' : document.getElementById('city-credit-alert').style.display = 'none';
                 document.getElementById('credit-stateprovince').value.length == 0 ? document.getElementById('stateprovince-credit-alert').style.display = 'block' : document.getElementById('stateprovince-credit-alert').style.display = 'none';
                 document.getElementById('credit-zippostal').value.length == 0 ? document.getElementById('zippostal-credit-alert').style.display = 'block' : document.getElementById('zippostal-credit-alert').style.display = 'none';
-            }       */
+            }       *-/
 
 
         if(document.getElementById('credit-name').value.length !=0 && 
@@ -884,7 +884,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('credit-zippostal').value.length !=0)
         {
             console.log("conditions met")
-            /*document.getElementById('.w-round div:nth-child(5)').trigger('tap');*/
+            /*document.getElementById('.w-round div:nth-child(5)').trigger('tap');*-/
 
             formstepslide5.style.display = "block";
             let nextButton = document.querySelector('#formslider .w-slider-arrow-right');
@@ -894,7 +894,7 @@ document.addEventListener('DOMContentLoaded', function () {
             formstepslide4.style.display = "none";
         }   
 
-    });   
+    });   */
 
     /******Step 5 // - References Slider // MUST TEST *******************/
     document.getElementById('References-Bank-1-Name').addEventListener('keydown', function(event) {
@@ -1600,11 +1600,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 console.log("conditions met");
 
-                formstepslide1.style.display = "none";
+                /*formstepslide1.style.display = "none";
                 formstepslide2.style.display = "none";
                 formstepslide3.style.display = "none";
                 formstepslide4.style.display = "none";
-                formstepslide5.style.display = "none";
+                formstepslide5.style.display = "none";*/
 
 
                 console.log("real end of code");   
@@ -1613,5 +1613,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault(); 
         }          
     });
+
+    /* ES STamp 03 29*/
 
 });
