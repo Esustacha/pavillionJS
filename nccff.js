@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let formstepslide1 = document.getElementById('verificationform-formstepslide1');
     let formstepslide2 = document.getElementById('verificationform-formstepslide2');
     let formstepslide3 = document.getElementById('verificationform-formstepslide3');
-    let formstepslide4 = document.getElementById('verificationform-formstepslide4');
+    /*let formstepslide4 = document.getElementById('verificationform-formstepslide4');*/
     let formstepslide5 = document.getElementById('verificationform-formstepslide5');
     let formstepslide6 = document.getElementById('verificationform-formstepslide6');
 
     formstepslide1.style.display = "block";
     formstepslide2.style.display = "none";
     formstepslide3.style.display = "none";
-    formstepslide4.style.display = "none";
+    /*formstepslide4.style.display = "none";*/
     formstepslide5.style.display = "none";
     formstepslide6.style.display = "none";
 
@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if(document.getElementById('ctc-owner-name').value.length != 0 && document.getElementById('contact-email-owner').value.length != 0 &&
             document.getElementById('ctc-accounts-name').value.length != 0 && document.getElementById('contact-email-accounts').value.length != 0) {
 
-            formstepslide4.style.display = "block";
+            formstepslide5.style.display = "block";
             let nextButton = document.querySelector('#formslider .w-slider-arrow-right');
             if (nextButton) {
                 nextButton.click();
@@ -1112,7 +1112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault(); 
         /*document.getElementById('.w-round div:nth-child(4)').trigger('tap');*/
 
-        formstepslide4.style.display = "block";
+        formstepslide3.style.display = "block";
         let nextButton = document.querySelector('#formslider .w-slider-arrow-left');
         if (nextButton) {
             nextButton.click();               
